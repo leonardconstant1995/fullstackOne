@@ -1,0 +1,21 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url(back.webp);
+}
+img{
+  height: 200px;
+}
+textarea{
+  width: 30%;
+  height: 20px
+}
+h1{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.767);
+  font-family: 'Pacifico', Arial, Helvetica, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.notesHeader{
+  color: white;
+}
+
