@@ -16,26 +16,33 @@
   <% if(notes[0] === undefined){notes[0] = {} }%>
   <% if(notes[0].notesList === undefined){ notes[0]['notesList'] = " " }%>
   <% if(notes[0].notesList[0] === undefined){notes[0].notesList[0] = "" }%>
-<div class="container">
-  <form action="/update" method="post">
-    <div class="notesHeader">
-      Your Notes
-      <span id="addBtn"><i class="fa-solid fa-plus" ></i></span>
-    </div>
-    <div class="notepadList">
-      <% console.log(Object.keys(notes[0].notesList).length) %>
-      <% for(let i = 0; i < Object.keys(notes[0].notesList).length ; i++) {%>
-      <div class="notes">
-        <textarea name="<%= i%>" id="" cols="30" rows="10">
-            <%= notes[0].notesList[i]%>
-        </textarea>
-        <span class="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+  <div class="container">
+    <form action="/update" method="post">
+      <div class="notesHeader">
+        Your Notes
+        <span id="addBtn"><i class="fa-solid fa-plus" ></i></span>
       </div>
-      <% }%>
-    </div> 
-    <button type="submit" class="updateBtn">Update</button>
-  </form>
-</div>
+      <div class="notepadList">
+        <% console.log(Object.keys(notes[0].notesList).length) %>
+        <% for(let i = 0; i < Object.keys(notes[0].notesList).length ; i++) {%>
+        <div class="notes">
+          <input name="<%= i%>" id="" cols="30" rows="10">
+              <%= notes[0].notesList[i]%>
+        </input>
+          <span class="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <% }%>
+      </div> 
+      <button type="submit" class="updateBtn">Update</button>
+    </form>
+  </div>
+
+<img id="snap" src="snap.jpg" alt="">
+<img id="bubble" src="bubble.jpg" alt="">
+
+<p id="speech">Write your notes in the box above!</p>
+
+  
 <script src="main.js"></script>
 
 </body>

@@ -1,0 +1,52 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url(back.webp);
+}
+img{
+  height: 200px;
+}
+input{
+  width: 20%;
+  height: 30px;
+  border-radius: 7px;
+  background-color: aliceblue;
+}
+h1{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Pacifico', Arial, Helvetica, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
+
+}
+.notesHeader{
+  color: white;
+}
+.notes{
+  margin-top: 10px;
+}
+.closeBtn{
+  color: white;
+}
+p{
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  font-family: 'Pacifico', Arial, Helvetica, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#snap{
+  margin: 248px 0px 0px 500px;
+  width: 500px;
+  height: 400px;
+}
+#bubble{
+  margin: -200px 0 0 -100px;
+}
+#speech{
+  font-size: 1.7em;
+  margin: -471px 7px 1px 940px;
+  width: 15%;
+  color: black;
+  font-family: 'Pacifico', Arial, Helvetica, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
